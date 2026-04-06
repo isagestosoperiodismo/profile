@@ -33,11 +33,20 @@
 
       <section class="mt-10 flex justify-center">
         {#each gallery as src, index}
-          <img
-            class="w-full max-w-3xl object-contain bg-neutral-50"
-            {src}
-            alt={`Crisis Industrial ${index + 1}`}
-          />
+          <a
+            class="group block w-full max-w-3xl overflow-hidden bg-neutral-50"
+            href="https://isagestosoperiodismo.github.io/crisis-industrial/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              class="w-full object-contain transition-transform duration-300 ease-out group-hover:scale-105"
+              {src}
+              alt={`Crisis Industrial ${index + 1}`}
+              loading="lazy"
+              decoding="async"
+            />
+          </a>
         {/each}
       </section>
 

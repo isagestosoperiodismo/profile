@@ -19,6 +19,9 @@
             class="aspect-square w-full max-w-xs object-cover grayscale"
             src={pic}
             alt="Isabel Gestoso"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
           />
         </div>
       </section>

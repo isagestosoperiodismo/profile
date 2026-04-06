@@ -17,18 +17,21 @@
       <header class="space-y-3">
         <p class="text-sm font-semibold text-sky-600">Proyecto</p>
         <h1 class="text-4xl font-semibold text-neutral-900 md:text-5xl">
-          <span class="font-serif">Huellas de nuestra historia</span
-          ><span class="text-sky-600">.</span>
+          <span class="font-serif">Huellas de nuestra historia</span><span
+            class="text-sky-600">.</span
+          >
         </h1>
       </header>
 
-      <section class="mt-8 space-y-4 text-base leading-relaxed text-neutral-700">
+      <section
+        class="mt-8 space-y-4 text-base leading-relaxed text-neutral-700"
+      >
         <p>
-          Lo que archivamos mantiene viva la memoria, nos permite revisar el pasado
-          para aprender y comprender el presente. Resguardar y mantener archivos es
-          una tarea fundamental para la construcción del futuro. ¿Quién se encarga
-          de eso? ¿Cómo se hace? En Huellas de la historia damos respuesta a esas
-          preguntas.
+          Lo que archivamos mantiene viva la memoria, nos permite revisar el
+          pasado para aprender y comprender el presente. Resguardar y mantener
+          archivos es una tarea fundamental para la construcción del futuro.
+          ¿Quién se encarga de eso? ¿Cómo se hace? En Huellas de la historia
+          damos respuesta a esas preguntas.
         </p>
         <div>
           <p class="font-semibold text-neutral-900">CON LA PARTICIPACIÓN DE:</p>
@@ -44,12 +47,14 @@
         </div>
       </section>
 
-      <section class="mt-10 grid gap-4 sm:grid-cols-2">
+      <section class="mt-10 grid gap-1 sm:grid-cols-2">
         {#each gallery as src, index}
           <img
             class="aspect-square w-full max-w-xs justify-self-center object-cover"
             {src}
             alt={`Huellas de nuestra historia ${index + 1}`}
+            loading="lazy"
+            decoding="async"
           />
         {/each}
       </section>

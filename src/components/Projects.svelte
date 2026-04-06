@@ -25,6 +25,8 @@
             class="h-36 w-full rounded-md object-cover"
             {src}
             alt={`Proyecto ${index + 1}`}
+            loading="lazy"
+            decoding="async"
           />
         {/each}
       </div>

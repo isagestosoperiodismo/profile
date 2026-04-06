@@ -19,6 +19,8 @@
             alt={note.images[0].caption ?? note.title}
             class="h-full w-full object-cover"
             style={`object-position: ${note.imagePosition ?? "center"}`}
+            loading="lazy"
+            decoding="async"
           />
         </a>
         <div class="flex items-start">
