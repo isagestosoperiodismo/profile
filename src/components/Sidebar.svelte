@@ -1,8 +1,11 @@
 ﻿<script>
+  import { base } from "$app/paths";
   import { page } from "$app/stores";
 
-  const isActive = (path) => $page.url.pathname === path;
-  const isHome = () => $page.url.pathname === "/";
+  const normalize = (path) => (path.endsWith("/") ? path : `${path}/`);
+  const withBase = (path) => `${base}${path}`;
+  const isActive = (path) => normalize($page.url.pathname) === normalize(withBase(path));
+  const isHome = () => normalize($page.url.pathname) === normalize(withBase("/"));
 </script>
 
 <aside
@@ -19,7 +22,7 @@
           class:decoration-sky-500={isHome()}
           class:decoration-2={isHome()}
           class:underline-offset-4={isHome()}
-          href="/#about"
+          href={withBase("/#about")}
         >
           Sobre mí
         </a>
@@ -30,7 +33,7 @@
           class:decoration-sky-500={isActive("/notas")}
           class:decoration-2={isActive("/notas")}
           class:underline-offset-4={isActive("/notas")}
-          href="/notas"
+          href={withBase("/notas/")}
         >
           Notas
         </a>
@@ -41,7 +44,7 @@
           class:decoration-sky-500={isActive("/huellas")}
           class:decoration-2={isActive("/huellas")}
           class:underline-offset-4={isActive("/huellas")}
-          href="/huellas"
+          href={withBase("/huellas/")}
         >
           Huellas
         </a>
@@ -52,7 +55,7 @@
           class:decoration-sky-500={isActive("/registro")}
           class:decoration-2={isActive("/registro")}
           class:underline-offset-4={isActive("/registro")}
-          href="/registro"
+          href={withBase("/registro/")}
         >
           Registro
         </a>
@@ -73,3 +76,5 @@
     </div>
   </div>
 </aside>
+
+

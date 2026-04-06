@@ -1,5 +1,8 @@
 ﻿<script>
+  import { base } from "$app/paths";
   import { fade } from "svelte/transition";
+
+  const withBase = (path) => `${base}${path}`;
 </script>
 
 <header in:fade={{ duration: 700 }} class="space-y-6">
@@ -27,7 +30,7 @@
     Soy productora de
     <a
       class="underline decoration-sky-500 decoration-2 underline-offset-4 hover:text-sky-700"
-      href="/huellas"
+      href={withBase("/huellas/")}
     >Huellas de Nuestra Historia</a>
     y escribí
     <a
@@ -38,3 +41,5 @@
     >mi primera nota publicada</a>.
   </p>
 </header>
+
+
