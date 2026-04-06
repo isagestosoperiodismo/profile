@@ -47,7 +47,7 @@
         </div>
       </section>
 
-      <section class="mt-10 grid gap-1 sm:grid-cols-2">
+      <section class="mt-10 grid gap-0 sm:grid-cols-2">
         {#each gallery as src, index}
           <img
             class="aspect-square w-full max-w-xs justify-self-center object-cover"
@@ -72,3 +72,4 @@
     </div>
   </main>
 </div>
+
