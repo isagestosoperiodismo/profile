@@ -1,11 +1,9 @@
 ﻿<script>
   import Sidebar from "../../components/Sidebar.svelte";
   import Footer from "../../components/Footer.svelte";
-  import img2 from "$lib/assets/2.jpg";
-  import img4 from "$lib/assets/4.jpg";
-  import img5 from "$lib/assets/5.jpg";
+  import crisisIndustrial from "$lib/assets/crisis-industrial.jpg";
 
-  const gallery = [img2, img4, img5];
+  const gallery = [crisisIndustrial];
 </script>
 
 <div class="relative">
@@ -16,28 +14,31 @@
       <header class="space-y-3">
         <p class="text-sm font-semibold text-sky-600">Proyecto</p>
         <h1 class="text-4xl font-semibold text-neutral-900 md:text-5xl">
-          <span class="font-serif">Registro de despidos PBA</span
+          <span class="font-serif">Crisis Industrial</span
           ><span class="text-sky-600">.</span>
         </h1>
       </header>
 
       <section class="mt-8 space-y-4 text-base leading-relaxed text-neutral-700">
         <p>
-          Este espacio sirve para describir el contexto del registro, el recorte
-          territorial y el impacto social que buscás visibilizar.
+          <span class="font-semibold text-neutral-900">Título:</span> Registro de
+          despidos y cierres en empresas del Conurbano Bonaerense
         </p>
         <p>
-          Podés sumar datos, fuentes y decisiones editoriales para explicar cómo se
-          construyó el proyecto y qué aporta.
+          <span class="font-semibold text-neutral-900">Descripción:</span> Los
+          datos obtenidos corresponden a un relevamiento diario en diversos medios
+          de comunicación tanto locales como nacionales. Parte de la información
+          proviene de un listado NO OFICIAL del Ministerio de Producción de PBA,
+          es por eso que puede estar incompleto.
         </p>
       </section>
 
-      <section class="mt-10 grid gap-4 sm:grid-cols-3">
+      <section class="mt-10">
         {#each gallery as src, index}
           <img
-            class="h-44 w-full object-cover"
+            class="h-60 w-full object-cover sm:h-72"
             {src}
-            alt={`Registro de despidos ${index + 1}`}
+            alt={`Crisis Industrial ${index + 1}`}
           />
         {/each}
       </section>

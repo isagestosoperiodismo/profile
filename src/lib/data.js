@@ -3,6 +3,7 @@ import img2 from "$lib/assets/2.jpg";
 import img3 from "$lib/assets/3.jpg";
 import img4 from "$lib/assets/4.jpg";
 import img5 from "$lib/assets/5.jpg";
+import alexKohan from "$lib/assets/alex-kohan.jpg";
 
 export const datacontent = [
   {
@@ -86,6 +87,19 @@ export const datacontent = [
         src: img5,
         caption: "",
         width: "wide",
+      },
+    ],
+  },
+  {
+    id: "6",
+    title: "Entrevista a Alexandra Kohan",
+    href: "https://revista-quorum.webnode.page/l/alex-kohan-la-verdad-no-esta-en-lo-explicito-del-humor-esta-en-lo-que-se-trafica-via-la-risa/?fbclid=PAZXh0bgNhZW0CMTEAAaaFymkUXdpgP7I3bYe_QkkvGNrCJtpGZakkAxAoBvuk1ZH_iEwi_Azlofg_aem_5AppolP2Q_-xxtBiE3ElSw",
+    description: [],
+    images: [
+      {
+        src: alexKohan,
+        caption: "",
+        width: "normal",
       },
     ],
   },

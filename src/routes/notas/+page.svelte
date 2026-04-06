@@ -13,9 +13,8 @@
   <main class="w-full px-6 py-10 lg:ml-72 lg:px-14">
     <div class="max-w-4xl">
       <header class="space-y-3">
-        <p class="text-sm font-semibold text-sky-600">Notas</p>
         <h1 class="text-4xl font-semibold text-neutral-900 md:text-5xl">
-          <span class="font-serif">Selección de notas</span
+          <span class="font-serif">Algunas de las notas que más me gustaron</span
           ><span class="text-sky-600">.</span>
         </h1>
       </header>

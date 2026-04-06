@@ -3,9 +3,6 @@
 </script>
 
 <div>
-  <h2 class="text-3xl font-semibold text-neutral-900 md:text-4xl">
-    <span class="font-serif">Notas</span><span class="text-sky-600">.</span>
-  </h2>
   <div class="flex flex-col gap-8 pt-6">
     {#each data as note}
       <article
@@ -26,7 +23,7 @@
         </a>
         <div class="flex items-start">
           <a
-            class="text-neutral-900 underline decoration-sky-500 decoration-2 underline-offset-4 hover:text-sky-700"
+            class="text-neutral-900 hover:text-sky-700 hover:underline hover:decoration-sky-500 hover:decoration-2 hover:underline-offset-4"
             href={note.href}
             target="_blank"
             rel="noreferrer"

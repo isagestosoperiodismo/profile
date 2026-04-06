@@ -46,7 +46,7 @@
           class:underline-offset-4={isActive("/huellas")}
           href={withBase("/huellas/")}
         >
-          Huellas
+          Huellas de Nuestra Historia
         </a>
         <span class="text-sky-600 lg:hidden">•</span>
         <a
@@ -63,13 +63,13 @@
 
       <div class="space-y-2 text-sm text-neutral-700">
         <a
-          class="block underline decoration-sky-500 decoration-2 underline-offset-4 hover:text-sky-700"
-          href="https://instagram.com/igestoso"
+          class="block hover:text-sky-700"
+          href="https://instagram.com/isagestoso"
           target="_blank"
           rel="noreferrer"
-        >@igestoso</a>
+        >@isagestoso</a>
         <a
-          class="block underline decoration-sky-500 decoration-2 underline-offset-4 hover:text-sky-700"
+          class="block hover:text-sky-700"
           href="mailto:isagestososter@gmail.com"
         >isagestososter@gmail.com</a>
       </div>

@@ -24,19 +24,30 @@
 
       <section class="mt-8 space-y-4 text-base leading-relaxed text-neutral-700">
         <p>
-          Acá podés contar el contexto del proyecto, el objetivo y el rol que
-          tuviste en la investigación y la producción.
+          Lo que archivamos mantiene viva la memoria, nos permite revisar el pasado
+          para aprender y comprender el presente. Resguardar y mantener archivos es
+          una tarea fundamental para la construcción del futuro. ¿Quién se encarga
+          de eso? ¿Cómo se hace? En Huellas de la historia damos respuesta a esas
+          preguntas.
         </p>
-        <p>
-          Sumá uno o dos párrafos más con datos clave, metodología y lo que
-          buscabas transmitir con el documental.
-        </p>
+        <div>
+          <p class="font-semibold text-neutral-900">CON LA PARTICIPACIÓN DE:</p>
+          <p class="mt-3">
+            Valeria Mustoni<br />
+            Arturo Aguirre<br />
+            María Belén Correa<br />
+            Daniela Drucaroff<br />
+            Emiliano Meincke<br />
+            Lautaro Pérez Miranda<br />
+            Ana Laura Masiello
+          </p>
+        </div>
       </section>
 
       <section class="mt-10 grid gap-4 sm:grid-cols-2">
         {#each gallery as src, index}
           <img
-            class="h-56 w-full object-cover"
+            class="aspect-square w-full object-cover"
             {src}
             alt={`Huellas de nuestra historia ${index + 1}`}
           />
