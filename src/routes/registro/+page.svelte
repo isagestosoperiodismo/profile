@@ -14,29 +14,27 @@
       <header class="space-y-3">
         <p class="text-sm font-semibold text-sky-600">Proyecto</p>
         <h1 class="text-4xl font-semibold text-neutral-900 md:text-5xl">
-          <span class="font-serif">Crisis Industrial</span
+          <span class="font-serif"
+            >Registro de despidos y cierres en empresas del Conurbano Bonaerense</span
           ><span class="text-sky-600">.</span>
         </h1>
       </header>
 
-      <section class="mt-8 space-y-4 text-base leading-relaxed text-neutral-700">
+      <section
+        class="mt-8 space-y-4 text-base leading-relaxed text-neutral-700"
+      >
         <p>
-          <span class="font-semibold text-neutral-900">Título:</span> Registro de
-          despidos y cierres en empresas del Conurbano Bonaerense
-        </p>
-        <p>
-          <span class="font-semibold text-neutral-900">Descripción:</span> Los
-          datos obtenidos corresponden a un relevamiento diario en diversos medios
-          de comunicación tanto locales como nacionales. Parte de la información
-          proviene de un listado NO OFICIAL del Ministerio de Producción de PBA,
-          es por eso que puede estar incompleto.
+          Los datos obtenidos corresponden a un relevamiento diario en diversos
+          medios de comunicación tanto locales como nacionales. Parte de la
+          información proviene de un listado NO OFICIAL del Ministerio de
+          Producción de PBA, es por eso que puede estar incompleto.
         </p>
       </section>
 
-      <section class="mt-10">
+      <section class="mt-10 flex justify-center">
         {#each gallery as src, index}
           <img
-            class="h-60 w-full object-cover sm:h-72"
+            class="w-full max-w-3xl object-contain bg-neutral-50"
             {src}
             alt={`Crisis Industrial ${index + 1}`}
           />

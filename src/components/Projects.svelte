@@ -17,9 +17,6 @@
       >
         Ver</a
       >
-      <p class="mt-2 text-sm text-neutral-600">
-        Descripción del proyecto.
-      </p>
     </li>
     <li class="list-none -ml-5">
       <div class="grid grid-cols-2 gap-3">
@@ -39,20 +36,14 @@
       >
         Ver</a
       >
-      <p class="mt-2 text-sm text-neutral-600">
-        Descripción del proyecto.
-      </p>
     </li>
     <li>
-      Matemática para periodistas.<a
+      <a
         class="text-blue-600 underline hover:text-blue-700"
         href="https://www.youtube.com/watch?v=9n8sXo2l5jE"
       >
         Ver</a
       >
-      <p class="mt-2 text-sm text-neutral-600">
-        Descripción del proyecto.
-      </p>
     </li>
   </ul>
 </div>

@@ -4,8 +4,10 @@
 
   const normalize = (path) => (path.endsWith("/") ? path : `${path}/`);
   const withBase = (path) => `${base}${path}`;
-  const isActive = (path) => normalize($page.url.pathname) === normalize(withBase(path));
-  const isHome = () => normalize($page.url.pathname) === normalize(withBase("/"));
+  const isActive = (path) =>
+    normalize($page.url.pathname) === normalize(withBase(path));
+  const isHome = () =>
+    normalize($page.url.pathname) === normalize(withBase("/"));
 </script>
 
 <aside
@@ -57,7 +59,7 @@
           class:underline-offset-4={isActive("/registro")}
           href={withBase("/registro/")}
         >
-          Registro
+          Crisis Industrial
         </a>
       </nav>
 
@@ -66,15 +68,13 @@
           class="block hover:text-sky-700"
           href="https://instagram.com/isagestoso"
           target="_blank"
-          rel="noreferrer"
-        >@isagestoso</a>
+          rel="noreferrer">@isagestoso</a
+        >
         <a
           class="block hover:text-sky-700"
-          href="mailto:isagestososter@gmail.com"
-        >isagestososter@gmail.com</a>
+          href="mailto:isagestososter@gmail.com">isagestososter@gmail.com</a
+        >
       </div>
     </div>
   </div>
 </aside>
-
-

@@ -47,7 +47,7 @@
       <section class="mt-10 grid gap-4 sm:grid-cols-2">
         {#each gallery as src, index}
           <img
-            class="aspect-square w-full object-cover"
+            class="aspect-square w-full max-w-xs justify-self-center object-cover"
             {src}
             alt={`Huellas de nuestra historia ${index + 1}`}
           />
