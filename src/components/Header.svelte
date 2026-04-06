@@ -13,8 +13,15 @@
     >
   </h1>
   <p class="text-sm leading-relaxed text-neutral-700 md:text-base">
-    Periodista, fotógrafa y programadora en mis ratos libres. Escribo para la
-    sección Zonales de <a
+    Periodista, <a
+      href="https://isagestoso.myportfolio.com/"
+      target="_blank"
+      rel="noreferrer"
+      class="underline decoration-sky-500 decoration-2 underline-offset-4 hover:text-sky-700"
+      >fotógrafa</a
+    >
+    y programadora en mis ratos libres. Escribo para la sección Zonales de
+    <a
       class="underline decoration-sky-500 decoration-2 underline-offset-4 hover:text-sky-700"
       href="https://www.clarin.com/autor/isabel-gestoso.html"
       target="_blank"
