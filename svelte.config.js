@@ -19,8 +19,8 @@ const config = {
 			base: '/profile'
 		},
 		adapter: adapter({
-			pages: 'build',
-			assets: 'build'
+			pages: 'docs',
+			assets: 'docs'
 		})
 	}
 };
